@@ -1,0 +1,20 @@
+fullnameOverride: juristbot-ai
+
+replicaCount: 1
+
+image:
+  repository: neuronestai/juristbot
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8000
+  nodePort: 30080
+
+resources: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
