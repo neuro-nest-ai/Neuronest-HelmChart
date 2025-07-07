@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: neuronestai/juristbot
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: NodePort
